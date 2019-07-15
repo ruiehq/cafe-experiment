@@ -1,0 +1,52 @@
+@media only screen and (max-width: 479px){
+	.header {
+		&-container {
+			.address, .reservation {
+				display: none;
+			}
+		}
+	}
+	.more {
+		.two-columns {
+			flex-direction: column;
+			.left, .right {
+				width: 100%;
+			}
+		}
+		.two-columns:nth-of-type(2n) {
+			.right {
+				order: 1;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.hero {
+		&-content {
+			padding: 0 30px;
+		}
+	}
+	.footer {
+		&-content {
+			flex-direction: column;
+			align-items: center;
+			.block {
+				margin-bottom: 20px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.header {
+		&-container {
+			.address, .reservation {
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 992px){}
